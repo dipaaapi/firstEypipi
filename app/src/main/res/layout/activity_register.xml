@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="@drawable/micro_soccer_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="#2D7DD2"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_toLeftOf="@+id/txtSeperator"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/micro_soccer_navbar"
+                android:textColor="#000"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/txtSeperator"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:background="#03DAC5"
+                android:textColor="#000"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:text="" />
+
+<!--            <TextView-->
+<!--                android:layout_toRightOf="@+id/txtSeperator"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Contact us"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:id="@+id/register"-->
+<!--                android:textAlignment="textEnd"-->
+<!--                android:nextFocusUp="@color/colorPrimaryDark"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="end" />-->
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="350dp">-->
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+
+                    android:layout_centerInParent="true"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_square"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/register_form"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:text="Username:"
+                                android:textAllCaps="true"
+                                android:layout_weight=".50"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="username..."
+                                android:textColorHint="#fff"
+                                android:layout_weight=".50"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fff"
+                                android:text="password:"
+                                android:layout_weight=".50"
+                                android:textAllCaps="true"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="password..."
+                                android:textColorHint="#fff"
+                                android:layout_weight=".50"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:text="re-password:"
+                                android:textAllCaps="true"
+                                android:textColor="#fff" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="password..."
+                                android:textColorHint="#fff"
+                                android:layout_weight=".50"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="email:"
+                                android:textColor="#fff"
+                                android:textAllCaps="true"
+                                android:layout_weight=".50"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="email..."
+                                android:textColorHint="#fff"
+                                android:layout_weight=".50"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/return_button"/>
+
+                            <Button
+                                android:id="@+id/button"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/register_submit"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        <!--</RelativeLayout>
+    </RelativeLayout>-->
+</LinearLayout>
