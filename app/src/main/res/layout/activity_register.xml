@@ -187,6 +187,8 @@
                             android:gravity="center">
 
                             <Button
+                                android:id="@+id/return_main"
+                                android:onClick="back"
                                 android:layout_width="100dp"
                                 android:layout_height="35dp"
                                 android:background="@drawable/return_button"/>
